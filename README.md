@@ -1,5 +1,5 @@
 # live-pose
-Live pose estimation with SOTA algorithms on RPi
+Live pose estimation with SOTA algorithms from webcams / (later) Autopilot
 
 ## Single view pose estimation
 - https://github.com/microsoft/multiview-human-pose-estimation-pytorch
