@@ -10,3 +10,4 @@ Live pose estimation with SOTA algorithms on RPi
 - https://github.com/zhangyux15/4d_association
 - https://github.com/Jeff-sjtu/CrowdPose
 - https://github.com/zju3dv/mvpose
+- https://github.com/lambdaloop/anipose
