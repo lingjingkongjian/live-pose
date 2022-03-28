@@ -1,8 +1,9 @@
 # live-pose
-Live pose estimation with SOTA algorithms from webcams / (later) Autopilot
+Live pose estimation with SOTA algorithms from webcams / (later) Autopilot
 
 ## Single-view pose estimation
-- https://github.com/freemocap/freemocap
+- https://github.com/freemocap/freemocap (single person)
+- https://github.com/mks0601/3DMPPE_POSENET_RELEASE (multi person)
 
 ## Single-person multi-view pose estimation
 - https://github.com/microsoft/multiview-human-pose-estimation-pytorch
