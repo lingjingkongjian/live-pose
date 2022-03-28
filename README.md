@@ -19,6 +19,7 @@ Live pose estimation with SOTA algorithms from webcams / (later) Autopilot
 # use conda according to 
 https://github.com/DeepLabCut/DeepLabCut-live/blob/master/docs/install_desktop.md
 for test use export TF_FORCE_GPU_ALLOW_GROWTH=true
+conda activate dlc-live
 
 # install tensorrt
 os="ubuntu2004"
@@ -28,3 +29,7 @@ sudo apt-key add /var/nv-tensorrt-repo-${os}-${tag}/7fa2af80.pub
 
 sudo apt-get update
 sudo apt-get install tensorrt
+
+
+# errors
+ValueError: not enough values to unpack (expected 2, got 0) --> make sure corners of Checkerboard are in the view
