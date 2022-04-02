@@ -7,7 +7,9 @@ import numpy as np
 
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 dlc_proc = Processor()
-dlc_live = DLCLive("DLC_human_dancing_resnet_101_iteration-0_shuffle-1", processor=dlc_proc)
+dlc_human_path = "DLC_human_dancing_resnet_101_iteration-0_shuffle-1"
+
+dlc_live = DLCLive(dlc_human_path, processor=dlc_proc)
 
 # v4l2-ctl --list-devices
 
@@ -29,11 +31,11 @@ while 1:
 
   if ret1 and ret2:
       poses1 = dlc_live.get_pose(img1)
-      print(poses1)
+      #print(poses1)
       poses2 = dlc_live.get_pose(img2)
-      print(poses2)
+      #print(poses2)
       points = np.concatenate((poses1, poses2), axis=0)
-      print(points)
+      #print(points)
 
       #score_threshold = 0.5
       # remove points that are below threshold
@@ -44,7 +46,7 @@ while 1:
 
       p3ds_flat = cgroup.triangulate(points_flat, progress=True)
       reprojerr_flat = cgroup.reprojection_error(p3ds_flat, points_flat, mean=True)
-      print(reprojerr_flat)
+      #print(reprojerr_flat)
 
       cv2.imshow('img1',img1)
       cv2.imshow('img2',img2)
