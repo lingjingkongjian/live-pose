@@ -27,6 +27,7 @@ python process_two_streams.py
 ## Single-person multi-view pose estimation
 - https://github.com/microsoft/multiview-human-pose-estimation-pytorch
 - https://github.com/karfly/learnable-triangulation-pytorch
+- https://github.com/HowieMa/TransFusion-Pose
 
 ## Multi-person multi-view pose estimation
 - https://github.com/microsoft/voxelpose-pytorch
