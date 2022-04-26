@@ -62,3 +62,6 @@ ValueError: not enough values to unpack (expected 2, got 0) --> make sure corner
 MMPose errors: from mmdet.apis import inference_detector, init_detector --> https://github.com/open-mmlab/mmpose/issues/530 Please uninstall all mmcv & mmcv-full in your system, and reinstall the latest mmcv-full.
 
 https://github.com/facebookresearch/detectron2/issues/686
+
+## Datasets
+- h3.6m https://www.stubbornhuang.com/511/
