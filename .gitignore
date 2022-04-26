@@ -1,0 +1,7 @@
+*.tar
+3DMPPE_POSENET_RELEASE
+__pycache__
+demo
+hand-dlc-models
+mmdetection
+mmpose
