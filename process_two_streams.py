@@ -3,10 +3,13 @@ import os
 from aniposelib.cameras import Camera, CameraGroup
 import numpy as np
 
-method = "dlc"
+method = "voxelpose"
 if(method == "dlc"):
     from dlc import setup
     from dlc import inference
+elif(method == "voxelpose"):
+    from voxelpose import setup
+    from voxelpose import inference
 
 # v4l2-ctl --list-devices
 
@@ -18,7 +21,7 @@ cap2.set(cv2.CAP_PROP_BUFFERSIZE, 1)  # set buffer size
 ret1, img1 = cap1.read()
 ret2, img2 = cap2.read()
 
-setup(img1) # many methods 
+setup(img1) # some methods need the first frame to initialise
 cgroup = CameraGroup.load('calibration.toml')
 
 while 1:
